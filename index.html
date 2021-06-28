@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Téglalap</title>
+        <link
+            rel="stylesheet"
+            href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css"
+        />
+    </head>
+
+    <body>
+        <div class="container">
+            <h3>Kerület- és területszámítás</h3>
+            <div class="row">
+                <div class="col-4">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label
+                                >Adja meg a téglalap egyik oldalát:</label
+                            >
+                            <input
+                                type="number"
+                                name="longer-side"
+                                class="form-control"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label
+                                >Adja meg a téglalap másik oldalát:</label
+                            >
+                            <input
+                                type="number"
+                                name="shorter-side"
+                                class="form-control"
+                            />
+                        </div>
+                    </form>
+                    <button
+                        onclick="calculator()"
+                        type="submit"
+                        class="btn btn-primary"
+                    >
+                        Click me!
+                    </button>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        a = <span class="long-s">0</span>
+                    </div>
+                    <div class="form-group">
+                        b = <span class="short-s">0</span>
+                    </div>
+                    <div class="form-group">
+                        A téglalap kerülete: <span class="kerulet">0</span>
+                    </div>
+                    <div class="form-group">
+                        A téglalap területe: <span class="terulet">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/teglalap.js"></script>
+    </body>
+</html>
